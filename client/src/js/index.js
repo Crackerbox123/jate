@@ -1,6 +1,6 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-import { initDb, getDb, putDb } from './database';
+import { initdb, getDb, putDb } from './database';
 
 
 // imports from other js files
@@ -49,5 +49,5 @@ if ('serviceWorker' in navigator) {
 }
 
 window.addEventListener('load', function() {
-  initDb();
+  initdb();
 });
