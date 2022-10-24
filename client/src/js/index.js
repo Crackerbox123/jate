@@ -15,6 +15,8 @@ import "./install";
 
 import "../css/index.css";
 
+// import bootstrap and popper
+
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
