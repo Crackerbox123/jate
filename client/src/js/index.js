@@ -3,6 +3,13 @@ import Editor from './editor';
 import './database';
 import '../css/style.css';
 
+// imports from other js files
+
+import "./database";
+import "./editor";
+import "./header";
+import "./install";
+
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
