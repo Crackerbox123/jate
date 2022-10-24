@@ -10,6 +10,11 @@ import "./editor";
 import "./header";
 import "./install";
 
+
+// import CSS
+
+import "../css/index.css";
+
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
