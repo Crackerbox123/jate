@@ -1,7 +1,7 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-import './database';
-import '../css/style.css';
+import { initDb, getDb, putDb } from './database';
+
 
 // imports from other js files
 
@@ -35,6 +35,8 @@ const editor = new Editor();
 
 if (typeof editor === 'undefined') {
   loadSpinner();
+  
+  
 }
 
 // Check if service workers are supported
@@ -45,3 +47,7 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
+
+window.addEventListener('load', function() {
+  initDb();
+});
